@@ -1,4 +1,8 @@
-# Demo Project
+# Demo Project based on this comment
+
+```
+Ok, so my component(Table) gets instantiated inside another component(Game). Game sets Table’s properties based on two useState variables populated by dropdowns in Game. Despite changing the dropdowns and seeing the state vars change, Table’s useState consts never get updated. I had to add a button with a function to specifically setVars in order for useEffect to fire. I’m assuming this is a mutability feature of useState and/or const’s that I’m missing.
+```
 
 Quick project to demo, changing state and fetching asyc.
 
