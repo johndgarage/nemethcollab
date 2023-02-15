@@ -1,18 +1,15 @@
-# Demo Project based on this comment
+## Demo Project based on this comment
 
 ```
+~Nemeth: 
+
 Ok, so my component(Table) gets instantiated inside another component(Game). Game sets Table’s properties based on 
 two useState variables populated by dropdowns in Game. Despite changing the dropdowns and seeing the state vars change, 
 Table’s useState consts never get updated. I had to add a button with a function to specifically setVars in order for 
 useEffect to fire. I’m assuming this is a mutability feature of useState and/or const’s that I’m missing.
 ```
 
-Quick project to demo, changing state and fetching asyc.
-
-There are few things to note:
-- I'm using [styled-components](https://styled-components.com/) in the components to add CSS, this is one of the preferred ways (there are others, but this my fav)
-- I created an [HTTP wrapper object (./src/helpers/http.js)](./src/helpers/http.js) around fetch to manage state of the AbortController()
-- created a quick [CSS animation to have a loading animation](./src/components/Spinner.jsx)
+## It has a few components which call a mock rest api.
 
 Here's a component Hierarchy Diagram
 
@@ -24,6 +21,15 @@ graph TB;
   UsersList.js --> Spinner.js
   User.js --> Spinner.js
 ```
+
+
+## There are few things to note:
+
+- I'm using [styled-components](https://styled-components.com/) in the components to add CSS, this is one of the preferred ways (there are others, but this my fav)
+- I created an [HTTP wrapper object (./src/helpers/http.js)](./src/helpers/http.js) around fetch to manage state of the AbortController()
+- created a quick [CSS animation to have a loading animation](./src/components/Spinner.jsx)
+
+
 
 ## To get this working on local
 
