@@ -9,7 +9,7 @@ Table’s useState consts never get updated. I had to add a button with a functi
 useEffect to fire. I’m assuming this is a mutability feature of useState and/or const’s that I’m missing.
 ```
 
-## It has a few components which call a mock rest api.
+## The DEMO has a few components which call a [mock rest api](https://jsonplaceholder.typicode.com/).
 
 Here's a component Hierarchy Diagram
 
@@ -39,7 +39,7 @@ It's a basic create react app so it should feel familiar. Go to a folder where y
 > git clone https://github.com/johndgarage/nemethcollab.git
 ```
 
-Got into /nemethcollab/
+Go into ./nemethcollab/
 
 
 To start
@@ -48,3 +48,8 @@ npm run start
 ```
 
 Open VSCode from there to explore the project.
+Note: You can usually do this to start vscode using the current directory as the vscode workspace
+```
+code .
+```
+
